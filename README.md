@@ -7,7 +7,7 @@ A simple Todo list application built with React.
 - Add new tasks
 - Mark tasks as completed
 - Delete tasks
-- Filter tasks by status (All, Completed, Incomplete)
+- Edit tasks
 
 ## Getting Started
 
@@ -40,12 +40,12 @@ A simple Todo list application built with React.
 ## Usage
 
 - Add a new task by entering the task in the input field and pressing Enter.
-- Mark a task as completed by clicking on the checkbox next to it.
-- Delete a task by clicking on the delete button next to it.
-- Use the filter options to view All tasks, Completed tasks, or Incomplete tasks.
+- Mark a task as completed by clicking on the task for a line to show over the task.
+- Delete a task by clicking on the trash bin on the other side of the task.
+- Use the Edit button to edit an ongoing task.
 
 ## Technologies Used
 
 - React
-- HTML
+- JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
 - CSS
