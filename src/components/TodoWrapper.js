@@ -20,15 +20,6 @@ export const TodoWrapper = () => {
         updateHeight();
     }
 
-    const updateHeight = () => {
-        const todoWrapper = document.querySelector('.TodoWrapper');
-        if (todoWrapper) {
-            const contentHeight = todoWrapper.scrollHeight;
-            todoWrapper.style.minHeight = contentHeight + 'px';
-        }
-    }
-    
-
     const toggleComplete = id => { // Function: toggleComplete. Parameter: id
         setTodos(todos.map(todo => todo.id === id ? { ...todo, completed: !todo.completed } : todo))
         updateHeight();
@@ -49,6 +40,15 @@ export const TodoWrapper = () => {
         updateHeight();
     }
 
+    const updateHeight = () => {
+        const todoWrapper = document.querySelector('.TodoWrapper');
+        if (todoWrapper) {
+            const originalHeight = parseInt(window.getComputedStyle(todoWrapper).getPropertyValue('min-height'));
+            const contentHeight = todoWrapper.scrollHeight;
+            const newHeight = Math.max(originalHeight, contentHeight);
+            todoWrapper.style.minHeight = newHeight + 'px';
+        }
+    }
     return (
         <div className='TodoWrapper' id='TodoWrapper'>
             <h1>Tasks To Work On!</h1>

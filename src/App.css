@@ -52,7 +52,8 @@ h1 {
 }
 
 .todo-input::placeholder {
-  color: #ff2a2a4d; 
+  color: #ff2a2a4d;
+  /*color: #160000;*/ 
 }
 
 .todo-btn {
@@ -84,7 +85,7 @@ h1 {
 }
 
 .completed {
-  color: #c5aeff;
+  color: #fff;
   text-decoration: line-through;
   cursor: pointer;
 }
