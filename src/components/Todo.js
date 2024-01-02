@@ -15,5 +15,5 @@ export const Todo = (props) => { /* React Functional component (Todo) that takes
                 <FontAwesomeIcon className="delete-icon" icon={faTrash} onClick={() => deleteTodo(task.id)} />
             </div>
         </div>
-    )
+    );
 }
