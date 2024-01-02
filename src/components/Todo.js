@@ -8,11 +8,24 @@ export const Todo = (props) => { /* React Functional component (Todo) that takes
     const { task, toggleComplete, deleteTodo, editTodo } = props; // This is Object destructuring, used to extract specific properties from props (task, editTodo, ...)
     //JSX Structure
     return (
-        <div className='Todo'> 
-            <p className={`${task.completed ? "completed" : "incompleted"}`} onClick={() => toggleComplete(task.id)}>{task.task}</p> 
-            <div>
-                <FontAwesomeIcon className="edit-icon" icon={faPenToSquare} onClick={() => editTodo(task.id)} />
-                <FontAwesomeIcon className="delete-icon" icon={faTrash} onClick={() => deleteTodo(task.id)} />
+        <div className='Todo'>
+            <p
+                className={`task-text ${task.completed ? "completed" : "incompleted"}`}
+                onClick={() => toggleComplete(task.id)}
+            >
+                {task.task}
+            </p>
+            <div className="icons-container">
+                <FontAwesomeIcon
+                    className="edit-icon"
+                    icon={faPenToSquare}
+                    onClick={() => editTodo(task.id)}
+                />
+                <FontAwesomeIcon
+                    className="delete-icon"
+                    icon={faTrash}
+                    onClick={() => deleteTodo(task.id)}
+                />
             </div>
         </div>
     );

@@ -1,6 +1,9 @@
-import React, { useState } from 'react' 
+import React, { useState } from 'react' /* Import from react library to create React components &
+                                           useState a React hook is imported from rect (The useState 
+                                            hook is used to manage state in functional components)*/
 
 export const TodoForm = ({ addTodo }) => { // Functional Component (TodoForm) Prop (addTodo) used to add a new task to the to-do list
+    
     const [value, setValue] = useState("") /* UseState Hook is used to initialize a state variable named (value) and an initial value 
                                             of an empty string ("") used to store the value entered into the input field*/
 
