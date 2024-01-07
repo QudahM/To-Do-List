@@ -6,6 +6,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons' // This is the trash
 export const Todo = (props) => { /* React Functional component (Todo) that takes a single parameter (props). 
                                     The parameter is an object that contains the properties passed to the component */
     const { task, toggleComplete, deleteTodo, editTodo } = props; // This is Object destructuring, used to extract specific properties from props (task, editTodo, ...)
+    
     //JSX Structure
     return (
         <div className='Todo'>

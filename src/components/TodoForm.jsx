@@ -12,6 +12,7 @@ export const TodoForm = ({ addTodo }) => { // Functional Component (TodoForm) Pr
         addTodo(value) // Calls the function (addTodo) with the current value (task) 
         setValue("") // Resets the input field by setting the value state to an empty string ("")
     }
+    
     //JSX Structure
     return (
         <form className='TodoForm' onSubmit={handleSubmit}>
