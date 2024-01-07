@@ -1,8 +1,8 @@
 import React, { useState } from 'react' // UseState is a React Hook 
-import { v4 as uuidv4 } from 'uuid'
-import { TodoForm } from './TodoForm'
-import { Todo } from './Todo'
-import { EditTodoForm } from './EditTodoForm'
+import { v4 as uuidv4 } from 'uuid' // Imports UUIDv4 (Universally Unique Identifiers version 4) To create unique Identifiers
+import { TodoForm } from './TodoForm' // Import Functional Component TodoForm from file TodoForm
+import { Todo } from './Todo' // Import Functional Component Todo from file Todo
+import { EditTodoForm } from './EditTodoForm' // Import Functional Component EditTodoForm from file EditTodoForm
 
 uuidv4()
 

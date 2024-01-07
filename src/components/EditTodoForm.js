@@ -9,7 +9,7 @@ export const EditTodoForm = ({ editTodo, task }) => { /* Functional Component (T
                                                      the initial value is (task.task) representing the current task text */
     const handleSubmit = e => {
         e.preventDefault()
-        editTodo(value, task.id) // Updates the todo with the updated task text (value) and the task ID 
+        editTodo(value, task.id) // Updates the ToDo with the updated task text (value) and the task ID 
         setValue("")
     }
     //JSX Structure 
