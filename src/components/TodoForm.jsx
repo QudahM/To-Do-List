@@ -20,7 +20,7 @@ export const TodoForm = ({ addTodo }) => { // Functional Component (TodoForm) Pr
                 type="text"
                 className='todo-input'
                 value={value}
-                placeholder='What is the task today?'
+                placeholder='What is the task?'
                 onChange={(e) => setValue(e.target.value)}
             />
             <button type='submit' className='todo-btn'>
